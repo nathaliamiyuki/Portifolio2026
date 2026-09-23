@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blush: #fde2e4;
+  --color-blush-deep: #f5c6cb;
+  --color-rose: #e8a0a8;
+  --color-cream: #fffdfa;
+  --color-ivory: #f7efe8;
+  --color-forest: #1e392a;
+  --color-forest-soft: #2d3a29;
+  --color-moss: #4a5d45;
+  --font-script: "Great Vibes", cursive;
+  --font-serif: "Lora", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-blush);
+  color: var(--color-forest);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-blush-deep);
+  color: var(--color-forest);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-forest);
+  outline-offset: 3px;
+}
+
+.lace-photo {
+  filter: drop-shadow(0 18px 28px rgba(30, 57, 42, 0.18));
+}
+
+.card-soft {
+  background: var(--color-cream);
+  border: 1px solid rgba(30, 57, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(30, 57, 42, 0.08);
+}
+
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--color-moss);
+}
+
+.divider-ornament::before,
+.divider-ornament::after {
+  content: "";
+  height: 1px;
+  width: min(28vw, 140px);
+  background: linear-gradient(90deg, transparent, #c9a3a7, transparent);
+}
+
+.nav-link {
+  position: relative;
+  letter-spacing: 0.12em;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link[aria-current="true"]::after {
+  width: 100%;
+}
