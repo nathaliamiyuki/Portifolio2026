@@ -23,7 +23,7 @@ const GROUPS = [
     items: ['Java', 'Spring Boot', 'Node.js', 'Express.js', 'APIs REST', 'MySQL', 'PostgreSQL', 'MongoDB', 'Firebase'],
   },
   {
-    title: 'Qualidade & Ferramentas',
+    title: 'Qualidades & Ferramentas',
     icon: IconSpark,
     items: ['Git', 'GitHub', 'VS Code', 'Jest', 'Cypress', 'Metodologias Ágeis (Scrum, Kanban)'],
   },
@@ -32,7 +32,7 @@ const GROUPS = [
     icon: IconHeart,
     items: [
       'Comunicação',
-      'Trabalho em Equipa',
+      'Trabalho em Equipe',
       'Atenção aos Detalhes',
       'Resolução de Problemas',
       'Português (Nativo)',
